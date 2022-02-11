@@ -1,0 +1,38 @@
+﻿<Window x:Class="ChessGameManager.ChessGameManagerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChessGameManager"
+        mc:Ignorable="d"
+        Title="Chess games manager" Height="450" Width="600">
+    <Grid>
+        <Button 
+            x:Name="BtnOpenChessGames"
+            Content="Show chess games" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="200"
+            Height="80"
+            Foreground="WhiteSmoke"
+            Background="Green"            
+            Click="BtnOpenChessGames_Click"
+            Margin="200,100,0,0"/>
+        <Button 
+            x:Name="BtnOpenPlayers"
+            Content="Show players" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Width="200" 
+            Height="80"
+            Foreground="WhiteSmoke"
+            Background="#13242C"            
+            Click="BtnOpenPlayers_Click"
+            Margin="200,250,0,0"/>
+        <Frame 
+            x:Name="Frame"
+            NavigationUIVisibility="Hidden"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"/>
+    </Grid>
+</Window>
